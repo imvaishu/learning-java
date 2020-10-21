@@ -1,7 +1,7 @@
 public class GreatestOf3{
  public static void main(String[] args) {
   if(args.length < 3){
-    System.out.println("Please give valid limit");
+    System.out.println("Please give 3 numbers");
   } else {
     int num1 = Integer.parseInt(args[0]);
     int num2 = Integer.parseInt(args[1]);
