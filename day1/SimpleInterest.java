@@ -13,8 +13,6 @@ public class SimpleInterest {
       int rateOfInterest = Integer.parseInt(args[1]);
       int period = Integer.parseInt(args[2]);
 
-      double simpleInterest = getSI(principal, rateOfInterest, period);
-
-      System.out.println("Simple interest is " + simpleInterest);
+      System.out.println("Simple interest is " + getSI(principal, rateOfInterest, period));
   }
 }
