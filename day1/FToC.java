@@ -10,8 +10,8 @@ public class FToC {
       return;
     }
 
-    double fahrenheitTemp = Integer.parseInt(args[0]);
+    double fahrenheitTemp = Double.parseDouble(args[0]);
 
-    System.out.println( "fahrenheit to centigrade of " + args[0] + " is " + getFToC(fahrenheitTemp) );
+    System.out.println( "fahrenheit to centigrade of " + fahrenheitTemp + " is " + getFToC(fahrenheitTemp) );
   }
 }

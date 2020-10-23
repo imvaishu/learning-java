@@ -10,8 +10,8 @@ public class CToF {
       return;
     }
 
-    double centigradeTemp = Integer.parseInt(args[0]);
+    double centigradeTemp = Double.parseDouble(args[0]);
 
-    System.out.println( "centigrade to fahrenheit of " + args[0] + " is " + getCToF(centigradeTemp) );
+    System.out.println( "centigrade to fahrenheit of " + centigradeTemp + " is " + getCToF(centigradeTemp) );
   }
 }
