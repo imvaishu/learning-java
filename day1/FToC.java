@@ -3,7 +3,8 @@ public class FToC {
     if(args.length < 1){
       System.out.println("Please give valid input");
       return;
-    } 
+    }
+     
       double fahrenheitTemp = Integer.parseInt(args[0]);
       double centigradeTemp = (fahrenheitTemp - 32) * 5/9;
       

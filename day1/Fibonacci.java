@@ -10,6 +10,7 @@ public class Fibonacci{
     } 
 
     int limit = Integer.parseInt(args[0]);
+
     for(int i = 1; i <= limit ; i++ ){
       System.out.println(firstTerm);
       sum = firstTerm + secondTerm;

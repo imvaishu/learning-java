@@ -7,10 +7,10 @@ public class MultiplicationTable {
       int from = Integer.parseInt(args[0]);
       int to = Integer.parseInt(args[1]);
 
-      int count;
-      for (count = 1; count <= to ;count++){
-        int result = from * count;
-        System.out.println(from + " * " + count + " = " + result);
+      for (int count = 1; count <= to ;count++){
+        int multiplication = from * count;
+
+        System.out.println(from + " * " + count + " = " + multiplication);
       }
   }
 }

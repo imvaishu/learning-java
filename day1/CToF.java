@@ -4,6 +4,7 @@ public class CToF {
       System.out.println("Please give valid input");
       return;
     } 
+    
       double centigradeTemp = Integer.parseInt(args[0]);
       double fahrenheitTemp = 1.8 * centigradeTemp + 32;
       

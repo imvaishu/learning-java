@@ -8,13 +8,14 @@ public class LCM {
       int num1 = Integer.parseInt(args[0]);
       int num2 = Integer.parseInt(args[1]);
 
-      int large = Math.max(num1,num2);
-      int small = Math.min(num1,num2);
-      int i = large;
+      int larger = Math.max(num1,num2);
+      int smaller = Math.min(num1,num2);
+      int lcm = larger;
       
-      while(i % small != 0){
-        i = i + large;
+      while(lcm % smaller != 0){
+        lcm = lcm + larger;
       }
-      System.out.println("LCM is " + i);
+      
+      System.out.println("LCM is " + lcm);
   }
 }

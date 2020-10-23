@@ -10,7 +10,8 @@ public class GreatestOf3{
     int num3 = Integer.parseInt(args[2]);
     
     int greatestOf2 = Math.max(num1,num2);
-    int result = Math.max(greatestOf2,num3);
-    System.out.println("Greatest of three is " + result);
+    int greatestOf3 = Math.max(greatestOf2,num3);
+
+    System.out.println("Greatest of three is " + greatestOf3);
   }
 }
