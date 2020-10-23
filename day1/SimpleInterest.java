@@ -1,5 +1,5 @@
 public class SimpleInterest {
-  public static double getSI(int principle,int rateOfInterest,int period) {
+  public static double getSI(int principal,int rateOfInterest,int period) {
     return (principal * rateOfInterest * period) / 100 ;
   }
 
