@@ -1,8 +1,8 @@
 public class MultiplicationTable {
 
-  public static void displayMulTable(int from, int to) {
-    for (int term = 1; term <= to; term++) {
-      System.out.println(from + " * " + term + " = " + (from * to));
+  public static void displayMulTable(int num, int limit) {
+    for (int term = 1; term <= limit; term++) {
+      System.out.println(num + " * " + term + " = " + (term * limit));
     }
   }
 
@@ -12,9 +12,9 @@ public class MultiplicationTable {
       return;
     }
 
-    int from = Integer.parseInt(args[0]);
-    int to = Integer.parseInt(args[1]);
+    int num = Integer.parseInt(args[0]);
+    int limit = Integer.parseInt(args[1]);
 
-    displayMulTable(from, to);
+    displayMulTable(num, limit);
   }
 }
