@@ -5,7 +5,7 @@ public class Fibonacci {
     int secondTerm = 1;
     int sum;
 
-    for (int i = 1; i <= limit; i++) {
+    for (int term = 1; term <= limit; term++) {
       System.out.println(firstTerm);
       sum = firstTerm + secondTerm;
       firstTerm = secondTerm;
