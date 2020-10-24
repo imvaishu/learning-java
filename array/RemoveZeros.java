@@ -8,21 +8,23 @@ public class RemoveZeros {
 
   public static int getCountOfZeros(int[] array) {
     int count = 0;
-    for (int index = 0; index < array.length; index++) {
-      if (array[index] > 0) {
+
+    for (int value : array) {
+      if (value > 0) {
         count++;
       }
     }
+
     return count;
   }
 
   public static int[] removeZeros(int[] array) {
     int[] newArray = new int[getCountOfZeros(array)];
-    
+
     int count = 0;
-    for (int index = 0; index < array.length; index++) {
-      if (array[index] > 0) {
-        newArray[count] = array[index];
+    for (int value : array) {
+      if (value > 0) {
+        newArray[count] = value;
         count++;
       }
     }
