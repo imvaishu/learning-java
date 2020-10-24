@@ -2,9 +2,7 @@ public class Ascending {
 
   public static boolean isAscending(int[] array) {
     for (int term = 0; term < array.length - 1; term++) {
-      if (array[term] > array[term + 1]) {
-        return false;
-      }
+      if (array[term] > array[term + 1]) return false;
     }
 
     return true;

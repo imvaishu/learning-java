@@ -21,6 +21,6 @@ public class RangeOfNumbers {
   }
 
   public static void main(String[] args) {
-    printArray(getRangeOfNumbers(10, 22));
+    printArray(getRangeOfNumbers(22, 10));
   }
 }
