@@ -10,7 +10,7 @@ public class Repeat {
     int[] series = new int[numOfTimes];
 
     for (int index = 0; index < numOfTimes; index++) {
-      array[index] = term;
+      series[index] = term;
     }
 
     return series;
