@@ -6,22 +6,20 @@ public class ConcatArray {
     }
   }
 
-  public static int[] concatTwoArray(int[] array1, int[] array2) {
-    int lengthOfNewArray = array1.length + array2.length;
-    int[] newArray = new int[lengthOfNewArray];
+  public static int[] getConcatenatedArray(int[] firstArray, int[] secondArray) {
+    int[] concatenatedArray = new int[firstArray.length + secondArray.length];
 
-    for (int index = 0; index < lengthOfNewArray; index++) {
-      newArray[index] =
-        index < array1.length ? array1[index] : array2[index - array1.length];
+    for (int index = 0; index < concatenatedArray.length; index++) {
+      concatenatedArray[index] = index < firstArray.length ? firstArray[index] : secondArray[index - firstArray.length];
     }
 
-    return newArray;
+    return concatenatedArray;
   }
 
   public static void main(String[] args) {
-    int[] array1 = { 1, 2, 3 };
-    int[] array2 = { 4, 5, 6 };
+    int[] firstArray = { 1, 2, 3 };
+    int[] secondArray = { 4, 5, 6 };
 
-    printArray(concatTwoArray(array1, array2));
+    printArray(getConcatenatedArray(firstArray, secondArray));
   }
 }
