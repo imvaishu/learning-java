@@ -1,12 +1,12 @@
 public class CharacterArray {
 
-  public static boolean isCharacterArrayEqual(char[] array1, char[] array2) {
-    if (array1.length != array2.length) {
+  public static boolean isTwoCharacterArrayEqual(char[] firstArray, char[] secondArray) {
+    if (firstArray.length != secondArray.length) {
       return false;
     }
 
-    for (int index = 0; index < array1.length; index++) {
-      if (array1[index] != array2[index]) {
+    for (int index = 0; index < firstArray.length; index++) {
+      if (firstArray[index] != secondArray[index]) {
         return false;
       }
     }
@@ -15,9 +15,9 @@ public class CharacterArray {
   }
 
   public static void main(String[] args) {
-    char[] array1 = { 'a', 'b', 'c' };
-    char[] array2 = { 'a', 'b', 'd' };
+    char[] firstArray = { 'a', 'b', 'c' };
+    char[] secondArray = { 'a', 'b', 'd' };
 
-    System.out.println(isCharacterArrayEqual(array1, array2));
+    System.out.println(isTwoCharacterArrayEqual(firstArray, secondArray));
   }
 }

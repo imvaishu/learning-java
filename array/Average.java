@@ -1,15 +1,18 @@
 public class Average {
 
-  public static int getAverage(int[] array) {
+  public static int getAverage(int[] numbers) {
     int sum = 0;
-    for (int term = 0; term < array.length; term++) {
-      sum += array[term];
+
+    for (int term : numbers) {
+      sum += term;
     }
-    return sum / array.length;
+
+    return sum / numbers.length;
   }
 
   public static void main(String[] args) {
-    int[] array = { 10, 20, 30, 40 };
-    System.out.println(getAverage(array));
+    int[] numbers = { 10, 20, 30, 40 };
+    
+    System.out.println(getAverage(numbers));
   }
 }
